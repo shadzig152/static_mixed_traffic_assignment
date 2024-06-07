@@ -27,15 +27,21 @@ data[e]에는 4가지 데이터가 들어있습니다.
 1. data[e]['ttt'] : Total Travel Time(float)
 
 2. data[e]['Pi_ue'] : HDV차량들의 경로 집합
+
 od별로 HDV차량들의 경로 집합이 저장됩니다.
+
 Ex)
 data[e]['Pi_ue'][('2','17')] = [[[path1], flow1], [[path2], flow2], ...]
+
 => 2에서 17로 가는 HDV 차량들의 경로(path)와 각 경로로 이동하는 차량 수(flow)
 
 3. data[e]['Pi_so'] : CAV차량들의 경로 집합
+   
 od별로 CAV차량들의 경로 집합이 저장됩니다.
+
 Ex)
 data[e]['Pi_ue'][('2','17')] = [[[path1], flow2], [[path2], flow2], ...]
+
 => 2에서 17로 가는 CAV 차량들의 경로(path)와 각 경로로 이동하는 차량 수(flow)
 
 4. data[e]['links'] : e일때 각 도로들 정보
