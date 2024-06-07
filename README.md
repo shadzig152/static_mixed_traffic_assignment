@@ -25,8 +25,11 @@ data.pickle은
 data 형식
 
 data[e(string)] => e별로 데이터가 나눠져 있습니다.
+
 Ex)
+
 data['1'] -> CAV 비율이 10%일 때 데이터
+
 data['10'] -> CAV 비율이 100%일 때 데이터
 
 data[e]에는 4가지 데이터가 들어있습니다.
@@ -38,6 +41,7 @@ data[e]에는 4가지 데이터가 들어있습니다.
 od별로 HDV차량들의 경로 집합이 저장됩니다.
 
 Ex)
+
 data[e]['Pi_ue'][('2','17')] = [[[path1], flow1], [[path2], flow2], ...]
 
 => 2에서 17로 가는 HDV 차량들의 경로(path)와 각 경로로 이동하는 차량 수(flow)
@@ -47,6 +51,7 @@ data[e]['Pi_ue'][('2','17')] = [[[path1], flow1], [[path2], flow2], ...]
 od별로 CAV차량들의 경로 집합이 저장됩니다.
 
 Ex)
+
 data[e]['Pi_ue'][('2','17')] = [[[path1], flow2], [[path2], flow2], ...]
 
 => 2에서 17로 가는 CAV 차량들의 경로(path)와 각 경로로 이동하는 차량 수(flow)
@@ -63,4 +68,5 @@ data[e]['links'][link(tuple)]['marginal_travel_times'] : link의 marginal travel
 
 
 Ex)
+
 data[e]['links'][('2','17')]['travel_times'] -> 2에서 17로 연결된 도로에서의 travel time
