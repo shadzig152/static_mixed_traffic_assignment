@@ -14,9 +14,9 @@ data.pickle은
 
 
 
-with open('data.pickle', 'rb') as fr:
-
-    data = pickle.load(fr)
+    with open('data.pickle', 'rb') as fr:
+    
+        data = pickle.load(fr)
     
 로 다시 읽을 수 있습니다.
 
