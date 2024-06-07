@@ -11,9 +11,16 @@ e는 0부터 1까지 10%씩 증가하도록 되어있습니다.
 
 # data.pickle 데이터 형식
 data.pickle은 
+
+
+
 with open('data.pickle', 'rb') as fr:
+
     data = pickle.load(fr)
+    
 로 다시 읽을 수 있습니다.
+
+
 
 data 형식
 
