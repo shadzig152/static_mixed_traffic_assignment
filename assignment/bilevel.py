@@ -433,7 +433,7 @@ for i in range(11):
 
     elog.append((ttt))
 
-with open('../network/data.pickle', 'wb') as fw:
+with open('data.pickle', 'wb') as fw:
     pickle.dump(data, fw)
 
 plt.plot(elog)
